@@ -27,6 +27,7 @@ yarn build
 - clone repository
 - start the project
 - hit this request in postman
+```
             url: http://localhost:1337/api/posts
             method: POST
             raw-JSON: {
@@ -34,6 +35,7 @@ yarn build
                     "title": "Please enter title here"
                 }
             }
+```
 - check the strapi admin for result
 
 ---
