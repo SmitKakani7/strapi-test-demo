@@ -1,10 +1,9 @@
 module.exports = {
     afterCreate(event) {
-        const { result, params } = event;
+        const { result } = event;
         strapi.entityService.create('api::comment.comment', {
             data: {
                 description: result.title, // Use post title as comment description
-                ticket: null, // Ticket will be updated later
             },
         });
         strapi.entityService.create('api::ticket.ticket', {
